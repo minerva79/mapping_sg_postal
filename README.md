@@ -151,7 +151,7 @@ to flag edge subzones. For analytics, consider **weighted** aggregation by secto
 
 ## License & attribution
 
-* Code: MIT (or your preferred license).
+* Code: GPL3.
 * Postal district definitions: URA “List of Postal Districts”.
 * Underlying postal points/subzones: see `data/` provenance in your environment.
 
