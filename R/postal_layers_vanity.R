@@ -5,7 +5,6 @@
 # WHAT
 #   - Loads output/*.geojson polygons and output/*_labels.gpkg points
 #   - Renders quick static previews with ggplot2
-#   - Builds an interactive Leaflet map with layer toggles & labels
 #
 # INPUTS (repo-relative; created by your build scripts)
 #   output/postal_2d.geojson
@@ -17,7 +16,6 @@
 #
 # OUTPUTS
 #   output/preview_postal_layers.png        # ggplot montage (optional)
-#   output/postal_layers_map.html           # Leaflet widget (optional)
 # ----------------------------------------------------------------------
 
 suppressPackageStartupMessages({
@@ -77,4 +75,5 @@ pngfile <- "output/preview_postal_layers.png"
 png(pngfile, width = 1400, height = 2100, res = 140)
 gridExtra::grid.arrange(p2, p3, pd, ncol = 1)
 dev.off()
+
 message("Wrote preview: ", pngfile)
